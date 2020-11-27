@@ -9,6 +9,8 @@ namespace Assignment5
         {
             Console.WriteLine("Welcome to the Adventure of Assignment 5!");
 
+            Console.WriteLine("\n\n======= CHARACTER =======\n\n");
+
             Character hero = new Character("Bob", RaceCategory.Human, 100);
 
             Console.WriteLine("{0} has entered the forest", hero.Name );
@@ -25,10 +27,10 @@ namespace Assignment5
 
             Console.WriteLine("{0} flees from the enemy", hero.Name);
 
-            string item = "small health potion";
+            string itemCharacter = "small health potion";
             int restoreAmount = 10;
 
-            Console.WriteLine("{0} find a {1} and drinks it", hero.Name, item);
+            Console.WriteLine("{0} find a {1} and drinks it", hero.Name, itemCharacter);
 
             Console.WriteLine("{0} restores {1} health", hero.Name, restoreAmount);
 
@@ -45,6 +47,8 @@ namespace Assignment5
                 Console.WriteLine("{0} has died.", hero.Name);
             }
             Console.WriteLine("Welcome to the Adventure of Assignment 5!");
+
+            Console.WriteLine("\n\n======= INVENTORY =======\n\n");
 
             // TODO: Create an inventory
             // TODO: Add 2 items to the inventory
