@@ -252,7 +252,7 @@ namespace Assignment5
             Inventory inventory = new Inventory(5);
             Item item = new Item("Green Herb", 10, ItemGroup.Consumable);
 
-            Console.WriteLine("There are {0}/{1} available slots", inventory.AvailableSlots, inventory.MaxSlots);
+            Console.WriteLine($"There are {inventory.AvailableSlots}/{inventory.MaxSlots} available slots");
             Console.WriteLine($"The following item will be added twice:" +
                                 $"\n  NAME:   {item.Name}" +
                                 $"\n  AMOUNT: {item.Amount}" +
@@ -278,7 +278,7 @@ namespace Assignment5
 
             inventory.AddItem(item);
 
-            Console.WriteLine("There are {0}/{1} available slots", inventory.AvailableSlots, inventory.MaxSlots);
+            Console.WriteLine($"There are {inventory.AvailableSlots}/{inventory.MaxSlots} available slots");
 
             // Reset the inventory
 
@@ -286,7 +286,7 @@ namespace Assignment5
 
             inventory.Reset();
 
-            Console.WriteLine("\nThere are {0}/{1} available slots", inventory.AvailableSlots, inventory.MaxSlots);
+            Console.WriteLine($"There are {inventory.AvailableSlots}/{inventory.MaxSlots} available slots");
         }
         #endregion
 
