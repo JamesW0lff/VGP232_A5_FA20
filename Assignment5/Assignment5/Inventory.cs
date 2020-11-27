@@ -75,9 +75,9 @@ namespace Assignment5
                     {
                         found = item.Key;
 
-                        if(items[item.Key] > 1)
+                        if(items[found] > 1)
                         {
-                            --items[item.Key];
+                            --items[found];
                         }
                         else
                         {
