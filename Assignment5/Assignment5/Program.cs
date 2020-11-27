@@ -16,7 +16,7 @@ namespace Assignment5
             Console.WriteLine("{0} has entered the forest", hero.Name );
 
             string monster = "goblin";
-            int damage = 10;
+            int damage = 200;
 
             Console.WriteLine("A {0} appeared and attacks {1}", monster, hero.Name);
 
@@ -46,7 +46,6 @@ namespace Assignment5
             {
                 Console.WriteLine("{0} has died.", hero.Name);
             }
-            Console.WriteLine("Welcome to the Adventure of Assignment 5!");
 
             Console.WriteLine("\n\n======= INVENTORY =======\n\n");
 
@@ -112,11 +111,6 @@ namespace Assignment5
             inventory.Reset();
 
             Console.WriteLine("\nThere are {0}/{1} available slots", inventory.AvailableSlots, inventory.MaxSlots);
-
-
-
-
-
 
         }
     }
