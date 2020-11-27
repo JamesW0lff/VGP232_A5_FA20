@@ -9,7 +9,6 @@ namespace Assignment5
     {
         public string Name { get; set; }
         public int Amount { get; set; }
-
         public ItemGroup Group { get; set; }
 
         /// <summary>
@@ -18,17 +17,21 @@ namespace Assignment5
         /// <param name="name"></param>
         /// <param name="amount"></param>
         /// <param name="group"></param>
+        #region ITEM
         public Item(string name, int amount, ItemGroup group)
         {
             Name = name;
             Amount = amount;
             Group = group;
         }
+        #endregion
 
+        #region TO STRING
         public override string ToString()
         {
             // TODO: display the output like this Axe
             return base.ToString();
         }
+        #endregion
     }
 }
